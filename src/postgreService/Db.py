@@ -4,11 +4,11 @@ from psycopg2 import OperationalError
 class Postgres:
     @staticmethod
     def connect():
-        host = "185.148.240.19"
+        host = "1.1.1.1"
         port = "5432"
-        database = "KlemsanIOT"
-        user = "KlemsanIOTUserLimited"
-        password = "1234klemsan4321"
+        database = "database_name"
+        user = "user_name"
+        password = "password"
 
         try:
             connection = psycopg2.connect(
