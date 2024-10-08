@@ -72,7 +72,6 @@ class AccessPoint:
     def getAccessPointIp():
         rows = AccessPoint.fetchAccessPoints()
         ipAddresses = []
-        ipAddresses.append('10.45.36.10')
         if rows:
             for row in rows:
                 ipAddresses.append(row[7])
@@ -85,8 +84,7 @@ class AccessPoint:
     @staticmethod
     def getAccessPointPort():
         rows = AccessPoint.fetchAccessPoints()
-        portNumbers = []
-        portNumbers.append(502)
+        portNumbers = [])
         if rows:
             for row in rows:
                 portNumbers.append(row[8])
